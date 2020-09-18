@@ -1,0 +1,76 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Example website</title>
+    <meta name="description" content="An example website made by Ollie Bannister for the deployments webinar.">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+
+    <link rel="icon" type="ico" href="raygun.ico">
+    <link rel="apple-touch-icon" href="raygun.ico">
+
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+
+    <!-- Raygun -->
+    <script type="text/javascript">
+        !function(a,b,c,d,e,f,g,h){a.RaygunObject=e,a[e]=a[e]||function(){
+        (a[e].o=a[e].o||[]).push(arguments)},f=b.createElement(c),g=b.getElementsByTagName(c)[0],
+        f.async=1,f.src=d,g.parentNode.insertBefore(f,g),h=a.onerror,a.onerror=function(b,c,d,f,g){
+        h&&h(b,c,d,f,g),g||(g=new Error(b)),a[e].q=a[e].q||[],a[e].q.push({
+        e:g})}}(window,document,"script","https://cdn.raygun.io/raygun4js/raygun.min.js","rg4js");
+    </script>
+</head>
+
+<body class="background">
+    <!-- particles.js container -->
+    <div id="particles-js"></div>
+
+    <!-- body -->
+    <div class="background__overlay">
+        <main>
+            <div class="content">
+                <h1 class="content__title">
+                    D<span>e</span>mo
+                </h1>
+                <h2 class="content__subheading">P<span>r</span>ob<span>l</span>em<span>a</span>ti<span>c</span>
+                    We<span>b</span>si<span>t</span>e</h2>
+                    <form class="signup-form" action="signin.html" method="GET">
+                        <img class="signup-form__icon" src='images/success.svg' alt="Success!" />
+                        <h3 class="signup-form__title">Success!</h3>
+                        <button class="signup-form__button">Sign in</button>
+                    </form>
+            </div>
+        </main>
+
+        <footer>
+            <p class="footer-text">Check out the <a
+                    href="https://github.com/Olwiba/Webinar-website-example">Source code</a></p>
+        </footer>
+    </div>
+
+    <!-- Raygun config -->
+    <script type="text/javascript">
+        rg4js('apiKey', 'EjA63mvyeuilmKMfdHtiPg');
+        rg4js('enableCrashReporting', true);
+        rg4js('enablePulse', true);
+        rg4js('setVersion', '#{Octopus.Release.Number}');
+        rg4js('setUser', {
+            identifier: 'ollie@raygun.com',
+            isAnonymous: false,
+            email: 'ollie@raygun.com',
+            fullName: 'Ollie Bannister',
+            firstName: 'Ollie',
+            uuid: 'BAE62917-ACE8-ab3D-9287-B6A33B8E8C55'
+        });
+    </script>
+
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+{
+  "name": "Webinar-website",
+  "version": "1.0.0",
+  "description": "An example website made by Ollie Bannister for the deployments webinar.",
+  "devDependencies": {
+    "grunt": "~0.4.4",
+    "grunt-contrib-cssmin": "latest",
+    "grunt-contrib-jshint": "latest",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-sass": "^2.1.0",
+    "jshint-stylish": "latest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Olwiba/Webinar-website-example.git"
+  },
+  "author": "olwiba",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Olwiba/Webinar-website-example/issues"
+  },
+  "homepage": "https://github.com/Olwiba/Webinar-website-example#readme"
+}
